@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 64" role="img" aria-label="Standard Bank">
+  <path d="M22 6 L40 13 V30 C40 43 32 51 22 56 C12 51 4 43 4 30 V13 Z" fill="#0033A1"/>
+  <path d="M22 14 L33 18.5 V30 C33 38.5 28 43.5 22 47 C16 43.5 11 38.5 11 30 V18.5 Z" fill="#FFFFFF"/>
+  <path d="M22 22 L27 24 V30 C27 34 25 36.5 22 38.5 C19 36.5 17 34 17 30 V24 Z" fill="#0033A1"/>
+  <text x="52" y="42" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#0033A1">Standard Bank</text>
+</svg>

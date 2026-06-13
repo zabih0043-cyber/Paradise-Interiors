@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- Wire to form handler / email service before launch -->
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Request a Quote — Paradise Interiors</title>
+  <meta name="description" content="Request a quote from Paradise Interiors — main contractor for bank fit-outs, healthcare and commercial interiors. Based in Benoni, serving all of South Africa.">
+  <link rel="canonical" href="contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us | Request a Quote — Paradise Interiors">
+  <meta property="og:description" content="Request a quote from Paradise Interiors — main contractor for bank fit-outs, healthcare and commercial interiors. Based in Benoni, serving all of South Africa.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us | Request a Quote — Paradise Interiors">
+  <meta name="twitter:description" content="Request a quote from Paradise Interiors — main contractor for bank fit-outs, healthcare and commercial interiors. Based in Benoni, serving all of South Africa.">
+  <meta name="twitter:image" content="assets/hero.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-contact.jpg" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <noscript>
+    <style>
+      .fade-up, .stagger > * { opacity: 1; transform: none; }
+      .eyebrow::after, .divider__line::before, .timeline-item::before { transform: scaleX(1); }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__wordmark" href="index.html" aria-label="Paradise Interiors — home">Paradise&nbsp;Interiors</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-active" aria-current="page">Contact</a>
+        <a href="#quote-form" class="btn btn--primary btn--nav">Request a Quote</a>
+      </nav>
+
+      <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__links" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="is-active" aria-current="page">Contact</a>
+      <a href="#quote-form" class="btn btn--primary">Request a Quote</a>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero page-hero--slim">
+      <div class="page-hero__bg">
+        <img src="assets/hero-contact.jpg" alt="Warm timber-slat building facade in bright sunlight" fetchpriority="high" width="1600" height="1067">
+      </div>
+      <div class="container page-hero__content">
+        <p class="eyebrow eyebrow--on-dark" data-animate>Get In Touch</p>
+        <h1 class="page-hero__title">Tell us the scope. We'll handle the&nbsp;rest.</h1>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SPLIT ============ -->
+    <section class="section contact">
+      <div class="container">
+        <div class="contact__layout">
+
+          <!-- Details card -->
+          <aside class="contact-card fade-up" data-animate>
+            <p class="contact-card__wordmark">Paradise&nbsp;Interiors</p>
+            <div class="contact-card__block">
+              <p>Benoni, Gauteng — operating nationally</p>
+            </div>
+            <div class="contact-card__block">
+              <p><a href="tel:+27110000000">+27 (0)11 XXX XXXX</a></p>
+              <p><a href="mailto:info@paradiseinteriors.co.za">info@paradiseinteriors.co.za</a></p>
+            </div>
+            <div class="contact-card__block">
+              <p>Mon&ndash;Fri, 07:00&ndash;17:00</p>
+            </div>
+            <p class="contact-card__note">Projects countrywide. Local teams in every province.</p>
+          </aside>
+
+          <!-- Quote form -->
+          <div class="contact__form-col fade-up" data-animate>
+            <form class="quote-form" id="quote-form" novalidate>
+              <div class="quote-form__row">
+                <div class="field">
+                  <label for="qf-name">Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="qf-name" name="name" required autocomplete="name">
+                  <p class="field__error">Please enter your name.</p>
+                </div>
+                <div class="field">
+                  <label for="qf-company">Company</label>
+                  <input type="text" id="qf-company" name="company" autocomplete="organization">
+                </div>
+              </div>
+
+              <div class="quote-form__row">
+                <div class="field">
+                  <label for="qf-email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="qf-email" name="email" required autocomplete="email">
+                  <p class="field__error">Please enter a valid email address.</p>
+                </div>
+                <div class="field">
+                  <label for="qf-phone">Phone <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="qf-phone" name="phone" required autocomplete="tel">
+                  <p class="field__error">Please enter a phone number.</p>
+                </div>
+              </div>
+
+              <div class="quote-form__row">
+                <div class="field">
+                  <label for="qf-type">Project type</label>
+                  <select id="qf-type" name="project-type">
+                    <option value="">Select a type</option>
+                    <option>Bank Fit-Out</option>
+                    <option>Healthcare</option>
+                    <option>Commercial</option>
+                    <option>Renovation</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="qf-province">Location</label>
+                  <select id="qf-province" name="province">
+                    <option value="">Select a province</option>
+                    <option>Eastern Cape</option>
+                    <option>Free State</option>
+                    <option>Gauteng</option>
+                    <option>KwaZulu-Natal</option>
+                    <option>Limpopo</option>
+                    <option>Mpumalanga</option>
+                    <option>Northern Cape</option>
+                    <option>North West</option>
+                    <option>Western Cape</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="qf-brief">Brief project description <span aria-hidden="true">*</span></label>
+                <textarea id="qf-brief" name="brief" rows="5" required></textarea>
+                <p class="field__error">Please describe the project briefly.</p>
+              </div>
+
+              <!-- Honeypot — humans never see or fill this -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="qf-website">Website</label>
+                <input type="text" id="qf-website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send Request</button>
+            </form>
+
+            <div class="form-success" id="form-success" role="status" hidden>
+              <p class="form-success__title">Thank you — we'll come back to you within one business day.</p>
+              <p class="form-success__text">If it's urgent, call us on <a href="tel:+27110000000">+27 (0)11 XXX XXXX</a>.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <p class="footer__wordmark">Paradise&nbsp;Interiors</p>
+        <p class="footer__oneliner">Main contractor for bank fit-outs and commercial interiors. 25+ years, delivered nationally.</p>
+      </div>
+      <nav class="footer__col footer__nav" aria-label="Footer">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__col footer__contact">
+        <p>Benoni, Gauteng</p>
+        <p>Operating nationally</p>
+        <p><a href="mailto:info@paradiseinteriors.co.za">info@paradiseinteriors.co.za</a></p>
+        <p><a href="tel:+27110000000">+27 (0)11 XXX XXXX</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Paradise Interiors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
