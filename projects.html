@@ -24,8 +24,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero-projects.jpg" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="image" href="assets/hero-projects.jpg" imagesrcset="assets/hero-projects-900.jpg 900w, assets/hero-projects.jpg 1920w" imagesizes="100vw" fetchpriority="high">
 
   <link rel="stylesheet" href="css/styles.css">
   <noscript>
@@ -76,7 +77,7 @@
     <!-- ============ PAGE HERO ============ -->
     <section class="page-hero page-hero--short">
       <div class="page-hero__bg">
-        <img src="assets/hero-projects.jpg" alt="Finished premium commercial interior with steel-framed glass partition wall and leather seating" width="1920" height="1200" fetchpriority="high">
+        <img src="assets/hero-projects.jpg" srcset="assets/hero-projects-900.jpg 900w, assets/hero-projects.jpg 1920w" sizes="100vw" alt="Finished premium commercial interior with steel-framed glass partition wall and leather seating" width="1920" height="1200" fetchpriority="high">
       </div>
       <div class="container page-hero__content">
         <p class="eyebrow eyebrow--on-dark" data-animate>Our Work</p>

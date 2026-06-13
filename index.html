@@ -23,8 +23,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="image" href="assets/hero.jpg" imagesrcset="assets/hero-900.jpg 900w, assets/hero.jpg 1600w" imagesizes="100vw" fetchpriority="high">
 
   <link rel="stylesheet" href="css/styles.css">
   <noscript>
@@ -94,7 +95,7 @@
     <!-- ============ 2. HERO ============ -->
     <section class="hero">
       <div class="hero__bg">
-        <img src="assets/hero.jpg" alt="Warm oak-panelled office with fluted glass partitions and natural light" fetchpriority="high" width="1600" height="1067">
+        <img src="assets/hero.jpg" srcset="assets/hero-900.jpg 900w, assets/hero.jpg 1600w" sizes="100vw" alt="Warm oak-panelled office with fluted glass partitions and natural light" fetchpriority="high" width="1600" height="1067">
       </div>
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="container hero__content">
